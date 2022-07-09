@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container, Stack, Button } from 'react-bootstrap'
+import BudgetCard from './components/BudgetCard'
 
 export default function App() {
   return (
@@ -23,6 +24,14 @@ export default function App() {
     
         }
       }>
+
+        <BudgetCard 
+        name="Entertainment" 
+        amount={500} 
+        max={1000}
+        gray
+        >
+        </BudgetCard>
       </div>
     </Container>
   )
